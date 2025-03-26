@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Global</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="header header_desktop">
+        <div class="logo">
+            <a href="#" class="logo__link">
+                <img src="./img/logo.jpg" alt="simple one">
+            </a>
+        </div>
+
+        <div class="flex">
+            <div class="search search_main">
+                <input type="search" class="search__input" placeholder="Поиск">
+                <img class="search__icon" src="./img/icons/loop-grey.svg" alt="search main">
+            </div>
+
+            <div class="acc">
+                <div class="acc__info">
+                    <div class="avatar">
+                        <img src="./img/avatar.jpg" alt="Avatar">
+                    </div>
+                    <span>Иван Иванов</span>
+                </div>
+
+                <button class="btn btn_settings">
+                    <img src="./img/icons/settings.svg" alt="настройки">
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <header class="header header_mobile">
+        <button type="button" class="board">
+            <img src="./img/icons/board.svg" alt="board">
+        </button>
+
+        <div class="flex">
+            <div class="acc">
+                <div class="acc__info">
+                    <div class="avatar">
+                        <img src="./img/avatar.jpg" alt="Avatar">
+                    </div>
+                </div>
+
+                <button type="button" class="btn btn_settings">
+                    <img class="btn__icon" src="./img/icons/settings.svg" alt="настройки">
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container container_menu">
+            <div class="container__block">
+                <div class="sidebar">
+                    <ul class="sidebar__list">
+                        <li class="sidebar__item">
+                            <button type="button" class="board sidebar__btn sidebar__btn_active">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 20C1.34315 20 0 18.6569 0 17V3C0 1.34315 1.34315 0 3 0H17C18.6569 0 20 1.34315 20 3V17C20 18.6569 18.6569 20 17 20H3ZM2 3C2 2.44772 2.44772 2 3 2H6V18H3C2.44772 18 2 17.5523 2 17V3ZM8 18V2H17C17.5523 2 18 2.44772 18 3V17C18 17.5523 17.5523 18 17 18H8Z" fill="#2E3238"/>
+                                </svg>                            
+                            </button>
+                        </li>
+        
+                        <li class="sidebar__item">
+                            <button type="button" class="sidebar__btn">
+                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11 0C11.3806 0 11.7282 0.216072 11.8967 0.557376L14.7543 6.34647L21.1446 7.28051C21.5212 7.33555 21.8339 7.59956 21.9512 7.96157C22.0686 8.32357 21.9703 8.72083 21.6977 8.98636L17.0745 13.4894L18.1656 19.851C18.23 20.2261 18.0757 20.6053 17.7677 20.8291C17.4598 21.0528 17.0515 21.0823 16.7145 20.9051L11 17.8998L5.28545 20.9051C4.94853 21.0823 4.54024 21.0528 4.23226 20.8291C3.92429 20.6053 3.77004 20.2261 3.83439 19.851L4.92548 13.4894L0.302266 8.98636C0.0296477 8.72083 -0.0686252 8.32357 0.0487525 7.96157C0.16613 7.59956 0.47881 7.33555 0.85537 7.28051L7.24574 6.34647L10.1033 0.557376C10.2718 0.216072 10.6194 0 11 0ZM11 3.25925L8.80671 7.70262C8.66117 7.99747 8.37998 8.20193 8.05463 8.24949L3.14841 8.9666L6.69773 12.4236C6.93361 12.6534 7.04127 12.9845 6.98561 13.309L6.14818 18.1917L10.5345 15.8849C10.8259 15.7317 11.1741 15.7317 11.4655 15.8849L15.8518 18.1917L15.0144 13.309C14.9587 12.9845 15.0664 12.6534 15.3023 12.4236L18.8516 8.9666L13.9454 8.24949C13.62 8.20193 13.3388 7.99747 13.1933 7.70262L11 3.25925Z"/>
+                                </svg>                                                       
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="menu">
+                    <div class="menu__search">
+                        <div class="search search_menu">
+                            <input type="search" class="search__input" placeholder="Поиск в меню">
+                            <img class="search__icon" src="./img/icons/filter.svg" alt="search menu">
+                        </div>
+    
+                        <button type="button" class="btn btn_no-pin">
+                            <img class="btn__icon" src="./img/icons/no-pin.svg" alt="no-pin menu">
+                        </button>
+                    </div>
+    
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">
+                                    <img src="./img/icons/arrow-right.svg" alt="arrow-right">
+                                    <span>Моя работа</span>
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">
+                                    <img src="./img/icons/arrow-right.svg" alt="arrow-right">
+                                    <span>Структура портала</span>
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">
+                                    <img src="./img/icons/arrow-right.svg" alt="arrow-right">
+                                    <span>Личное расписание</span>
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">
+                                    <img src="./img/icons/arrow-right.svg" alt="arrow-right">
+                                    <span>Отсутствие на рабочем месте</span>
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">
+                                    <img src="./img/icons/arrow-right.svg" alt="arrow-right">
+                                    <span>Портфель услуг</span>
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">
+                                    <img src="./img/icons/arrow-right.svg" alt="arrow-right">
+                                    <span>Дашборды</span>
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">
+                                    <img src="./img/icons/arrow-right.svg" alt="arrow-right">
+                                    <span>Доски задач</span>
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">
+                                    <img src="./img/icons/arrow-right.svg" alt="arrow-right">
+                                    <span>Обращения</span>
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">
+                                    <img src="./img/icons/arrow-right.svg" alt="arrow-right">
+                                    <span>События</span>
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">
+                                    <img src="./img/icons/arrow-right.svg" alt="arrow-right">
+                                    <span>Инциденты</span>
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">
+                                    <img src="./img/icons/arrow-right.svg" alt="arrow-right">
+                                    <span>Проблемы</span>
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">
+                                    <img src="./img/icons/arrow-right.svg" alt="arrow-right">
+                                    <span>Настройка каталогов</span>
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">
+                                    <img src="./img/icons/arrow-right.svg" alt="arrow-right">
+                                    <span>Запросы на обслуживание</span>
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">
+                                    <img src="./img/icons/arrow-right.svg" alt="arrow-right">
+                                    <span>Запросы на изменение</span>
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">
+                                    <img src="./img/icons/arrow-right.svg" alt="arrow-right">
+                                    <span>Управление конфигурациями</span>
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">
+                                    <img src="./img/icons/arrow-right.svg" alt="arrow-right">
+                                    <span>Управление уровнем услуг</span>
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">
+                                    <img src="./img/icons/arrow-right.svg" alt="arrow-right">
+                                    <span>Настройка соответствий</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+   
+        </div>
+
+        <form class="form">
+            <div class="form__header">
+                <div class="flex">
+                    <span>Подзадача</span>
+
+                    <button type="button" class="button button_create">
+                        Создать
+                    </button>
+                </div>
+
+                <div class="flex flex_btns">
+                    <button type="submit" class="button button_save">
+                        Сохранить
+                    </button>
+
+                    <button type="submit" class="button button_save-exit">
+                        Сохранить и выйти
+                    </button>
+                </div>
+            </div>
+            
+            <div class="form__container">
+                <h3 title="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit dolor quidem odio eius omnis, quibusdam laboriosam esse. Modi porro dicta suscipit. Magnam, a quisquam modi saepe maxime inventore, labore nesciunt dolores nemo reprehenderit incidunt ad voluptates suscipit odit sequi dolore obcaecati rem ex. Quo ducimus voluptates impedit delectus, perferendis suscipit.">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit dolor quidem odio eius omnis, quibusdam laboriosam esse. Modi porro dicta suscipit. Magnam, a quisquam modi saepe maxime inventore, labore nesciunt dolores nemo reprehenderit incidunt ad voluptates suscipit odit sequi dolore obcaecati rem ex. Quo ducimus voluptates impedit delectus, perferendis suscipit.</h3>
+                <ul class="form__one">
+                    <li class="form__item form__item_one">
+                        <label for="theme">Тема</label>
+                        <input type="text" name="theme" id="theme" required>
+                    </li>
+                    <li class="form__item form__item_one">
+                        <label for="status">Статус</label>
+                        <input type="text" name="status" id="status">
+                    </li>
+                    <li class="form__item form__item_one">
+                        <label for="descr">Описание</label>
+                        <input type="text" name="descr" id="descr">
+                    </li>
+                    <li class="form__item form__item_one form__item_btns">
+                        <label for="product">
+                            Продукт
+                            <input type="text" name="product" id="product">
+                        </label>
+                        <button class="btn btn_loop">
+                            <img src="./img/icons/loop-black.svg" alt="поиск">
+                        </button>
+                    </li>
+                    <li class="form__item form__item_one">
+                        <label for="note">Рабочие заметки</label>
+                        <input type="text" name="note" id="note" required>
+                    </li>
+                    <li class="form__item form__item_one">
+                        <label for="priority">Приоритет</label>
+                        <input type="text" name="priority" id="priority">
+                    </li>
+                    <li class="form__item form__item_one form__item_btns">
+                        <label for="man">
+                            Ответственный
+                            <input type="text" name="man" id="man">
+                            <button type="button" class="btn__delete"></button>
+                            <ul class="form-choice">
+                                <li class="form-choice__item">
+                                    <span>Иван Иванов</span>
+                                </li>
+                            </ul>
+                        </label>
+                        <div class="form__btns">
+                            <button class="btn btn_plus">
+                                <img src="./img/icons/plus.svg" alt="добавить">
+                            </button>
+                            <button class="btn btn_loop">
+                                <img src="./img/icons/loop-black.svg" alt="поиск">
+                            </button>
+                        </div>
+                    </li>
+                    <li class="form__item form__item_one form__item_btns">
+                        <label for="group">
+                            Группа
+                            <input type="text" name="group" id="group">
+                            <button type="button" class="btn__delete"></button>
+                            <ul class="form-choice">
+                                <li class="form-choice__item">
+                                    <span>Support Group</span>
+                                </li>
+                            </ul>
+                        </label>
+                        <div class="form__btns">
+                            <button class="btn btn_plus">
+                                <img src="./img/icons/plus.svg" alt="добавить">
+                            </button>
+                            <button class="btn btn_loop">
+                                <img src="./img/icons/loop-black.svg" alt="поиск">
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+    
+                <ul class="form__two">
+                    <li class="form__item form__item_two">
+                        <label for="comment">Комментарии</label>
+                        <input type="text" name="comment" id="comment">
+                    </li>
+    
+                    <li class="form__item form__item_two form__item_btns">
+                        <div class="block">
+                            <label for="people">Согласующие</label>
+                            <div class="block__bl">
+                                <div class="people-list">
+                                    <ul class="form-choice">
+                                        <li class="form-choice__item">
+                                            <span>Иван Иванов</span>
+                                            <button type="button" class="delete-man"></button>
+                                        </li>
+                                        <li class="form-choice__item">
+                                            <span>Иван Иванов</span>
+
+                                            <button type="button" class="delete-man"></button>
+                                        </li>
+                                        <li class="form-choice__item">
+                                            <span>Иван Иванов</span>
+
+                                            <button type="button" class="delete-man"></button>
+                                        </li>
+                                        <li class="form-choice__item">
+                                            <span>Иван Иванов</span>
+
+                                            <button type="button" class="delete-man"></button>
+                                        </li>
+                                        <li class="form-choice__item">
+                                            <span>Иван Иванов</span>
+
+                                            <button type="button" class="delete-man"></button>
+                                        </li>
+
+                                        <li class="form-choice__item">
+                                            <span>Иван Иванов</span>
+
+                                            <button type="button" class="delete-man"></button>
+                                        </li>
+                                        <li class="form-choice__item">
+                                            <span>Артём Подпрыгайко-Саппортов</span>
+                                            <button type="button" class="delete-man"></button>
+                                        </li>
+                                        <li class="form-choice__item">
+                                            <span>Иван Иванов</span>
+
+                                            <button type="button" class="delete-man"></button>
+                                        </li>
+                                        <li class="form-choice__item">
+                                            <span>Артём Подпрыгайко-Саппортов</span>
+
+                                            <button type="button" class="delete-man"></button>
+                                        </li>
+                                        <li class="form-choice__item">
+                                            <span>Иван Иванов</span>
+
+                                            <button type="button" class="delete-man"></button>
+                                        </li>
+                                        <li class="form-choice__item">
+                                            <span>Артём Подпрыгайко-Саппортов</span>
+
+                                            <button type="button" class="delete-man"></button>
+                                        </li>
+                                        <li class="form-choice__item">
+                                            <span>Иван Иванов</span>
+
+                                            <button type="button" class="delete-man"></button>
+                                        </li>
+                                    </ul>
+                                    <button type="button" class="btn__delete"></button>
+                                </div>
+
+                                <div class="form__btns">
+                                    <button class="btn btn_plus">
+                                        <img src="./img/icons/plus.svg" alt="добавить">
+                                    </button>
+                                    <button class="btn btn_loop">
+                                        <img src="./img/icons/loop-black.svg" alt="поиск">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                
+                <ul class="form__three">
+                    <li class="form__item form__item_three form__item_btns">
+                        <label for="name">
+                            Когда открыто
+                            <input type="text" name="open-data" id="open-data">
+                        </label>
+                        <button class="btn btn_data">
+                            <img src="./img/icons/calendar.svg" alt="выбор даты">
+                        </button>
+                    </li>
+
+                    <li class="form__item form__item_three form__item_btns">
+                        <label for="open-create">
+                            Когда создано
+                            <input type="text" name="open-create" id="open-create">
+                        </label>
+    
+                        <button class="btn btn_data">
+                            <img src="./img/icons/calendar.svg" alt="выбор даты">
+                        </button>
+                    </li>
+    
+                    <li class="form__item form__item_three form__item_btns">
+                        <label for="whom">
+                            Кем открыто
+                            <input type="text" name="whom" id="whom">
+                            <button type="button" class="btn__delete"></button>
+                            <ul class="form-choice">
+                                <li class="form-choice__item">
+                                    <span>Иван Иванов</span>
+                                </li>
+                            </ul>
+                        </label>
+    
+                        <div class="form__btns">
+                            <button class="btn btn_plus">
+                                <img src="./img/icons/plus.svg" alt="добавить">
+                            </button>
+                            <button class="btn btn_loop">
+                                <img src="./img/icons/loop-black.svg" alt="поиск">
+                            </button>
+                        </div>
+                    </li>
+    
+                    <li class="form__item form__item_three form__item_btns">
+                        <label for="who-create">
+                            Кем создано
+                            <input type="text" name="who-create" id="who-create">
+                            <button type="button" class="btn__delete"></button>
+                            <ul class="form-choice">
+                                <li class="form-choice__item">
+                                    <span>Иван Иванов</span>
+                                </li>
+                            </ul>
+                        </label>
+    
+                        <div class="form__btns">
+                            <button class="btn btn_plus">
+                                <img src="./img/icons/plus.svg" alt="добавить">
+                            </button>
+                            <button class="btn btn_loop">
+                                <img src="./img/icons/loop-black.svg" alt="поиск">
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </form>
+    </main>
+
+    <script>
+        const formHeader = document.querySelector('.form__header');
+
+        function handleScroll() {
+            if (window.pageYOffset > 0) { // Если есть хоть какой-то скролл
+                formHeader.classList.add('sticky');
+            } else { // Если скролла нет (вернулись в начало страницы)
+                formHeader.classList.remove('sticky');
+            }
+        }
+
+        window.addEventListener('scroll', handleScroll);
+    </script>
+</body>
+</html>

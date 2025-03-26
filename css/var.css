@@ -1,0 +1,11 @@
+:root {
+    --font-size-regular: 14px;
+    --font-size-medium: 20px;
+    --font-size-large: 32px;
+    --line-height: 20px;
+    --line-height-meduim: 24px;
+    --line-height-big: 34px;
+    --color-black: #2E3238;
+    --font-family-regular: montserrat-regular, san-serif;
+    --font-family-semibold: montserrat-semibold, san-serif;
+}
