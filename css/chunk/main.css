@@ -96,6 +96,11 @@ main {
     align-items: center;
 }
 
+.form__header .flex span {
+    font-family: var(--font-family-semibold);
+    color: #5C6470;
+}
+
 .form__header .flex:first-child {
     gap: 16px;
 }
